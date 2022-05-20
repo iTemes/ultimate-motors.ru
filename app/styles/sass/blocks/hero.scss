@@ -1,0 +1,51 @@
+.hero {
+    padding-top: 50px;
+
+    @include media-breakpoint-up(lg) {
+        padding-top: 0;
+    }
+}
+
+.hero-serivce  {
+    position: relative;
+    width: 100%;
+    padding-top: 120px;
+    padding-bottom: 70px;
+    padding-left: 15px;
+
+    object-fit: cover;
+    background-size: cover;
+
+    &::after {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 0;
+        right: 0;
+        bottom: 0;
+
+        background-image: linear-gradient(to bottom, #000 0%, transparent 100%);
+        background-repeat: repeat-x;
+        opacity: 0.5;
+    }
+
+    @include media-breakpoint-up(lg) {
+        padding-top: 280px;
+        padding-bottom: 140px;
+        padding-left: 0;
+
+
+        background-size: unset;
+    }
+    
+    .title {
+        @include media-breakpoint-up(xl) {
+            margin-left: calc(8.333% - 15px);
+            margin-right: calc(8.333% - 15px);
+        }
+    }
+}
+
+.row-30 > div {
+    margin-bottom: 30px;
+}

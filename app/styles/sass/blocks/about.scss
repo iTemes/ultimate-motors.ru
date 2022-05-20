@@ -1,0 +1,43 @@
+.about {
+    padding: 50px 0;
+    background-color: #ffffff;
+
+    &__item {
+        margin-bottom: 60px;
+        transform: translateY(50px);
+        opacity: 0;
+        transition: 0.45s ease-in-out;
+
+        @include media-breakpoint-up(lg) {
+            padding-top: 25px;
+            padding-bottom: 25px;
+        }
+
+        &.ShowIn {
+            transform: translateY(0px);
+            opacity: 1;
+        }
+        .title {
+            display: flex;
+            align-items: baseline;
+
+            @include media-breakpoint-up(lg) {
+                align-items: center;
+            }
+
+            svg {
+                margin-left: 25px;
+
+                @include media-breakpoint-up(lg) {
+                   width: 28px;
+                   height: 28px;
+                }
+            }
+        }
+
+        p {
+            text-align: justify;
+            max-width: 650px;
+        }
+    }
+}
