@@ -1,81 +1,83 @@
+.swiper {
+  background: $main-bg;
+}
 .swiper-slide {
-    height: calc(100vh - 50px);
+  height: calc(100vh - 50px);
 
-    &.swiper-slide-active {
-        .swiper-block {
-            opacity: 1;
-            transform: translateY(0px);
-        }
-    }
-
+  &.swiper-slide-active {
     .swiper-block {
-        padding-left: 15px;
-        margin: 0 15px;
+      opacity: 1;
+      transform: translateY(0px);
+    }
+  }
 
-        opacity: 0;
-        transform: translateY(80px);
-        transition: 0.65s ease-in-out;
-        transition-delay: 0.6s;
+  .swiper-block {
+    padding-left: 15px;
+    margin: 0 15px;
 
-        @include media-breakpoint-up(xl) {
-            margin-left: calc(8.333% - 15px);
-            margin-right: calc(8.333% - 15px);
-            padding-left: 0;
-            padding-right: 0;
-        }
+    opacity: 0;
+    transform: translateY(80px);
+    transition: 0.65s ease-in-out;
+    transition-delay: 0.6s;
 
-        &__caption {
-            width: 80%;
-            
-            font-size: 30px;
-            line-height: 1.4;
-            color: #ddd;
-            font-weight: 400;
-        }
+    @include media-breakpoint-up(xl) {
+      margin-left: calc(8.333% - 15px);
+      margin-right: calc(8.333% - 15px);
+      padding-left: 0;
+      padding-right: 0;
     }
 
-    .slider_image {
-        height: 100%;
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        
-        background-size: cover;
-        background-position: bottom;
+    &__caption {
+      width: 80%;
+
+      font-size: 30px;
+      line-height: 1.4;
+      color: #ddd;
+      font-weight: 400;
     }
+  }
 
-    .slider_video {
-        position: relative;
+  .slider_image {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 
-        video {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
+    background-size: cover;
+    background-position: bottom;
+  }
 
-            object-fit: cover;
-            filter: brightness(40%);
-            background-color: #222222;
-        }
+  .slider_video {
+    position: relative;
+
+    video {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+
+      object-fit: cover;
+      filter: brightness(40%);
+      background-color: #222222;
     }
+  }
 
-    .swiper-buttons {
-        margin-top: 25px;
-    }
+  .swiper-buttons {
+    margin-top: 25px;
+  }
 
-    img {
-        display: block;
-        width: 100%;
-        height: 100%;
+  img {
+    display: block;
+    width: 100%;
+    height: 100%;
 
-        object-fit: cover;
-    }
-
+    object-fit: cover;
+  }
 }
 
 .swiper-lazy-preloader {
-    height: 100%;
-    background-color: $light-purple;
+  height: 100%;
+  background-color: $light-purple;
 }

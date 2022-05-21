@@ -1,11 +1,6 @@
 import $ from 'jquery';
 window.jQuery = $;
-window.$ = $; // import jQuery module (npm i -D jquery)
-
-// require('~/app/libs/mmenu/js/jquery.mmenu.all.min.js') // import vendor jQuery plugin example (not module)
-
-// OnScreen
-import OnScreen from 'onscreen';
+window.$ = $;
 
 // import Swiper JS
 import Swiper, { Autoplay, Lazy } from 'swiper';
@@ -68,10 +63,10 @@ document.addEventListener('DOMContentLoaded', () => {
   }
   navBarScroll();
 
-  const mySwiper = new Swiper('.swiper-container', {
+  new Swiper('.swiper-container', {
     // Optional parameters
     autoplay: {
-      delay: 5000,
+      delay: 15000,
     },
     direction: 'horizontal',
     preloadImages: true,

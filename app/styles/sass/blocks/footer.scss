@@ -1,38 +1,36 @@
 .page-footer {
-    padding-top: 10px;
+  padding-top: 10px;
 
-    background-color: #272c4c;
+  background-color: $main-bg;
 
-    h5 {
-        color: #fff;
-    }
+  h5 {
+    color: #fff;
+  }
 
-    p {
-        color: #b8b8b8;
-    }
+  p {
+    color: #b8b8b8;
+  }
 
-    
-
-    .header-contacts-list {
-        margin-top: 20px;
-    }
+  .header-contacts-list {
+    margin-top: 20px;
+  }
 }
 
 .footer-info {
-    padding-top: 40px;
-    padding-bottom: 20px;
+  padding-top: 40px;
+  padding-bottom: 20px;
 
-    @include media-breakpoint-up(lg) {
-        padding-top: 50px;
-        padding-bottom: 50px;
-    }
+  @include media-breakpoint-up(lg) {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
 }
 
 .footer-block {
-    margin-bottom: 60px;
+  margin-bottom: 60px;
 }
 
 .copyright {
-    font-size: 12px;
-    text-align: center;
+  font-size: 12px;
+  text-align: center;
 }
