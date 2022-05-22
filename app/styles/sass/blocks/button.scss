@@ -21,7 +21,7 @@
   z-index: 1;
 
   &::before {
-    content: '';
+    content: "";
     position: absolute;
     left: 0;
     top: 0;
@@ -31,12 +31,12 @@
   }
 
   &::after {
-    content: '';
+    content: "";
     width: 0;
     height: 0;
     border-style: solid;
     border-width: 0 0 0 0;
-    border-color: #2791d3 transparent transparent transparent;
+    border-color: $main-bg transparent transparent transparent;
     position: absolute;
     top: 0;
     left: 0;
@@ -61,7 +61,7 @@
     }
 
     &::after {
-      border-color: #4555b9 transparent transparent transparent;
+      border-color: $main-bg transparent transparent transparent;
     }
 
     &:hover,
@@ -69,11 +69,49 @@
     &:active {
       color: #fff;
       background-color: transparent;
-      border-color: #4555b9;
+      border-color: $main-bg;
       text-decoration: none;
     }
-  }
+    &.button-wp,
+    &.button-tg {
+      display: flex;
+      align-items: center;
 
+      svg {
+        margin-right: 10px;
+        fill: #fff;
+      }
+      &:hover,
+      &:focus,
+      &:active {
+        color: #fff;
+        background-color: transparent;
+        text-decoration: none;
+      }
+    }
+    &.button-wp {
+      &::after {
+        border-color: #01ae52 transparent transparent transparent;
+      }
+
+      &:hover,
+      &:focus,
+      &:active {
+        border-color: #01ae52;
+      }
+    }
+    &.button-tg {
+      &::after {
+        border-color: #08c transparent transparent transparent;
+      }
+
+      &:hover,
+      &:focus,
+      &:active {
+        border-color: #08c;
+      }
+    }
+  }
   &.button-white-outline {
     color: #fff;
     background-color: transparent;

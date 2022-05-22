@@ -1,11 +1,22 @@
-h1,
-h2 {
+h1 {
   font-size: 40px;
   line-height: 1.1;
 
   @include media-breakpoint-up(xl) {
     line-height: 1.1875;
     font-size: 64px;
+  }
+}
+
+h2 {
+  margin-bottom: 1em;
+
+  font-size: 36px;
+  line-height: 1.1;
+
+  @include media-breakpoint-up(xl) {
+    line-height: 1.1875;
+    font-size: 54px;
   }
 }
 
@@ -30,7 +41,7 @@ h5 {
 }
 
 .title {
-  font-weight: 300;
+  font-weight: 500;
 
   &--light {
     color: $white;
@@ -51,7 +62,7 @@ h5 {
     }
 
     &::before {
-      content: '';
+      content: "";
       position: absolute;
       background-color: $accent;
       top: 0;
