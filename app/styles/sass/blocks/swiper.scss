@@ -54,7 +54,7 @@
     &::before {
       position: absolute;
       z-index: 1;
-      content: "";
+      content: '';
       top: 0;
       left: 0;
       right: 0;
@@ -96,4 +96,17 @@
 .swiper-lazy-preloader {
   height: 100%;
   background-color: $light-purple;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  @include media-breakpoint-down(md) {
+    top: unset;
+    bottom: 10%;
+  }
+}
+
+.swiper-pagination.swiper-pagination-progressbar {
+  top: unset;
+  bottom: 0;
 }

@@ -39,7 +39,8 @@ $container-max-widths: (sm: 540px, md: 720px, lg: 960px, xl: 1200px, xxl: 1800px
 @import 'node_modules/bootstrap/scss/_variables.scss' // Optional Bootstrap variable
 @import 'node_modules/bootstrap/scss/_tables.scss' // Optional Bootstrap Tables
 @import 'node_modules/bootstrap/scss/helpers/_visually-hidden.scss' // Optional Bootstrap Tables
-@import 'node_modules/swiper/swiper.scss' // Swiper slider
+// @import 'node_modules/swiper/swiper.scss' // Swiper slider
+@import "../swiper.min"
 
 // @import 'node_modules/bootstrap/scss/utilities/_sizing.scss' // Optional Bootstrap Utilites
 
@@ -77,6 +78,10 @@ input, textarea
 		border-color: red
 	&:required:valid
 		border-color: green
+
+:root
+	--swiper-theme-color: #b1150e
+
 html
 	overflow-x: hidden
 
