@@ -3,7 +3,7 @@
   width: 100%;
 
   @include media-breakpoint-up(lg) {
-    padding-top: 70px;
+    padding-top: 50px;
     position: absolute;
     top: 0;
     left: 0;
@@ -36,6 +36,7 @@
 
   display: flex;
   align-items: center;
+  justify-content: space-between;
 
   top: 0;
   left: 0;
@@ -45,16 +46,15 @@
 
   @include media-breakpoint-up(lg) {
     position: static;
-
     justify-content: center;
-
     background-color: transparent;
+
+    display: none;
   }
 }
 
 .logo {
-  max-height: 25px;
-
+  max-width: 150px;
   @include media-breakpoint-up(lg) {
     opacity: 0;
     visibility: hidden;
@@ -94,12 +94,16 @@
         top: 0px;
         transform: rotate(45deg);
         transition: top 0.3s 0s, transform 0.3s 0.3s;
+
+        background-color: $accent;
       }
 
       &::before {
         top: 0px;
         transform: rotate(-45deg);
         transition: top 0.3s 0s, transform 0.3s 0.3s;
+
+        background-color: $accent;
       }
     }
   }
@@ -134,8 +138,6 @@
 }
 
 .info-toogle {
-  margin-left: auto;
-
   &.open {
     .toggle-icon {
       &::after,
@@ -264,6 +266,10 @@
             margin-left: 15px;
           }
         }
+      }
+
+      .main-nav__logo {
+        max-width: 150px;
       }
 
       @include media-breakpoint-down(xl) {
@@ -401,6 +407,7 @@
 
     @include media-breakpoint-up(lg) {
       display: block;
+      max-width: 250px;
     }
 
     margin-left: calc(8.333% - 30px);
@@ -409,7 +416,6 @@
     .logo {
       opacity: 1;
       visibility: visible;
-      max-height: 40px;
       transition: 0.2s ease;
     }
   }
@@ -448,6 +454,9 @@
     visibility: visible;
     z-index: 10;
   }
+  @include media-breakpoint-down(md) {
+    padding: 40px 0;
+  }
 
   @include media-breakpoint-up(lg) {
     opacity: 1;
@@ -478,6 +487,16 @@
     align-items: center;
     margin-bottom: 5px;
     color: $white;
+
+    &:hover {
+      svg {
+        fill: $accent;
+      }
+    }
+
+    @include media-breakpoint-down(md) {
+      margin-bottom: 25px;
+    }
 
     @include media-breakpoint-up(lg) {
       font-size: 12px;

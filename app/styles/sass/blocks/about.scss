@@ -18,12 +18,8 @@
       opacity: 1;
     }
     .title {
-      display: flex;
-      align-items: baseline;
-
-      @include media-breakpoint-up(lg) {
-        align-items: center;
-      }
+      text-align: center;
+      font-weight: 600;
 
       svg {
         margin-left: 25px;
@@ -36,8 +32,10 @@
     }
 
     p {
-      text-align: justify;
+      text-align: center;
       max-width: 650px;
+
+      font-size: 1.2rem;
     }
   }
 }
