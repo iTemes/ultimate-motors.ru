@@ -4,8 +4,8 @@
 
   &__item {
     margin-bottom: 60px;
-    // transform: translateY(50px);
-    opacity: 1;
+    transform: translate3d(0, 50px, 0);
+    opacity: 0;
     transition: 0.45s ease-in-out;
 
     @include media-breakpoint-up(lg) {
@@ -13,8 +13,8 @@
       padding-bottom: 25px;
     }
 
-    &.ShowIn {
-      transform: translateY(0px);
+    &.active {
+      transform: translate3d(0, 0, 0);
       opacity: 1;
     }
     .title {
