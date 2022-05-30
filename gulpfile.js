@@ -130,7 +130,7 @@ function deploy() {
     rsync({
       root: 'dist/',
       hostname: 'cl22895@vh372.timeweb.ru',
-      destination: '/public_html/',
+      destination: '/home/c/cl22895/public_html',
       // clean: true, // Mirror copy with file deletion
       include: ['*.htaccess'], // Included files to deploy,
       exclude: ['**/Thumbs.db', '**/*.DS_Store'],
