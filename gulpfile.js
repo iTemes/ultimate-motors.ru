@@ -111,7 +111,15 @@ function images() {
 
 function buildcopy() {
   return src(
-    ['{app/js,app/css}/*.min.*', 'app/images/**/*.*', '!app/images/src/**/*', 'app/fonts/**/*', 'app/.htaccess'],
+    [
+      '{app/js,app/css}/*.min.*',
+      'app/images/**/*.*',
+      '!app/images/src/**/*',
+      'app/fonts/**/*',
+      'app/.htaccess',
+      'app/site.webmanifest',
+      'app/browserconfig.xml',
+    ],
     {
       base: 'app/',
     }
