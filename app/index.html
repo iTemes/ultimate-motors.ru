@@ -4,19 +4,31 @@
 <!--#set var="mainLink" value="true" -->
 <!--#set var="mainPhone" value="+7 968 943-10-97" -->
 <!--#set var="mainPhoneLink" value="+79689431097" -->
+
+<!--#set var="ogTitle" value="Ultimate pro" -->
+<!--#set var="ogUrl" value="https://www.ultimate-pro.ru" -->
 <!DOCTYPE html>
 <html>
-  <head>
+  <head itemscope itemtype="http://schema.org/WPHeader">
     <meta charset="utf-8" />
-    <title><!--#echo var="title" --></title>
-    <meta name="description" content="Ultimate pro автосервис" />
+    <title itemprop="headline"><!--#echo var="title" --></title>
+    <meta
+      itemprop="description"
+      name="description"
+      content="Ultimate pro это команда высоко квалифицированных специалистов. Мы
+    специализируемся на СТО, тюнинге и дооснощении BMW, Mersedes, Porsche и др., а так же мототехники."
+    />
+    <meta
+      itemprop="keywords"
+      name="keywords"
+      content="Ultimate pro автосервис Москва BMW, Mersedes, Porsche Москва, автосервис в Тушино"
+    />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="keywords" content="Ultimate pro автосервис Москва" />
     <link rel="icon" href="images/favicon.png" />
-    <meta property="og:image" content="images/dist/preview.jpg" />
     <link rel="stylesheet" href="css/app.min.css" />
     <meta name="yandex-verification" content="b1253e3faa4da9e7" />
     <!--#include virtual="/parts/metrika.html" -->
+    <!--#include virtual="/parts/og.html" -->
   </head>
 
   <body>

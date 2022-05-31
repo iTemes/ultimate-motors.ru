@@ -103,12 +103,12 @@
         <a target="_blank" href="https://t.me/+79689431097"><!--#echo var="mainPhone" --></a> Telegram
       </li>
     </ul>
-    <ul class="main-nav__list">
+    <ul class="main-nav__list" itemscope itemtype="http://schema.org/SiteNavigationElement">
       <li class="main-nav__item main-nav__item--main" data-hidden='<!--#echo var="mainLink" -->'>
-        <a href="/">Главная</a>
+        <a itemprop="url" href="/">Главная</a>
       </li>
       <li class="main-nav__item">
-        <a href='<!--#echo var="aboutlink" -->'>О компании</a>
+        <a itemprop="url" href='<!--#echo var="aboutlink" -->'>О компании</a>
       </li>
       <li class="main-nav__item main-nav__relative">
         <a class="main-nav__link">
@@ -129,7 +129,7 @@
         </a>
         <ul class="sub-nav">
           <li class="main-nav__subitem">
-            <a href="/sto.html">
+            <a itemprop="url" href="/sto.html">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="16"
@@ -147,7 +147,7 @@
             </a>
           </li>
           <li class="main-nav__subitem">
-            <a href="/retrofitting.html">
+            <a itemprop="url" href="/retrofitting.html">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="16"
@@ -166,7 +166,7 @@
           </li>
         </ul>
       </li>
-      <li class="main-nav__item"><a href="#contacts">Контакты</a></li>
+      <li class="main-nav__item"><a itemprop="url" href="#contacts">Контакты</a></li>
     </ul>
   </nav>
   <div class="header-contacts">
