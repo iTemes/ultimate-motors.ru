@@ -119,6 +119,7 @@ function buildcopy() {
       'app/.htaccess',
       'app/site.webmanifest',
       'app/browserconfig.xml',
+      'app/favicon.ico',
     ],
     {
       base: 'app/',
